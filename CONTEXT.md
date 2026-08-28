@@ -43,8 +43,14 @@ _Avoid_: ToS, T&Cs, EULA
 
 **Flag**:
 A clause Redline surfaces as capable of hurting the signer, shown with the
-exact sentence it came from.
+cited span it came from.
 _Avoid_: issue, risk, finding, alert
+
+**Cited span**:
+The shortest contiguous run of source text containing the language a flag
+rests on, quoted verbatim. May cross sentences or cover a stem and its
+sub-clauses.
+_Avoid_: quote, citation, source sentence, excerpt
 
 **Absence-flag**:
 A flag raised because something protective is missing rather than present.

@@ -1,6 +1,6 @@
 # 0001 — Every flag cites its source
 
-Status: accepted · 2026-08-28
+Status: accepted · 2026-08-28 · amended by ADR-0013 (span, not sentence)
 
 ## Decision
 

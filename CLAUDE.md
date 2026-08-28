@@ -1,7 +1,7 @@
 # Redline
 
-A web app for people signing a contract, lease, freelance agreement, or terms
-of service without a lawyer. It tells them what they are actually agreeing to.
+A web app for freelancers signing an agreement they did not draft, without a
+lawyer. It tells them what they are actually agreeing to.
 
 ## Scope
 
@@ -33,10 +33,12 @@ Not open for reinterpretation. If one looks wrong, raise it rather than route
 around it.
 
 - Next.js, Supabase for auth and database, deployed on Vercel
-- The uploaded file is parsed in the browser; only text is stored
+- The uploaded file is parsed in the browser. Text is not retained after
+  analysis unless the signer saves that document to their library
 - Every risk flag cites the exact sentence it came from — a flag whose source
   cannot be shown is a bug, not a degraded result
-- The product calls its model through OpenRouter
+- The product calls its model through OpenRouter, on a route that does not
+  train on the text
 
 ## Standing rules
 
@@ -48,9 +50,11 @@ around it.
 
 ## Read before you start
 
-- `research/summary.md` — the user research. Read it before deciding what the
-  product should do.
-- `PRD.md` — the brief, once it exists. Read it before building.
+- `PRD.md` — the brief. Read it before building.
+- `CONTEXT.md` — the project's vocabulary. Use its terms.
+- `docs/adr/` — the decisions and what they cost. Read before proposing a
+  change to one.
+- `research/summary.md` — the user research behind the brief.
 
 ## Agent skills
 
